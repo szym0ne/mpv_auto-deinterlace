@@ -8,7 +8,6 @@ Their behavior is only slightly different and is described inside *.lua files as
 
 Tested on WIN10 on shinchiro builds mpv-x86_64-20231112-git-7cab30c and mpv-x86_64-v3-20231112-git-7cab30c releases.
 
-
 # auto-deinterlace_II.lua
 This script checks whether current video is interlaced when:
 1. new file is loaded
@@ -27,7 +26,6 @@ Above can be reverted with keybind "ctrl+d" and will be automatically reverted a
 PLEASE NOTE: if it is reverted it will set hwdec to "auto-safe" - when you'd like different behaviour
 you need to change lines below, which contain: 'mp.set_property("hwdec", "auto-safe")' to:
 'mp.set_property("hwdec", "*your desired value")'.
-
 
 # auto-deinterlace_let-a-only.lua
 This script checks whether current video is interlaced when:

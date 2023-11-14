@@ -22,9 +22,9 @@ checks if the value you set is correct every time you manually change it with as
 However this will let you switch on video filter bwdif with keybind "ctrl+shift+d"
 if the video isn't recognized as interlaced - at the same time it will switch off hwdec
 as it seems not to be working correctly with bwdif on.
-Above can be reverted with keybind "ctrl+d" and will be automatically reverted at the end-file event.
+This can be reverted with keybind "ctrl+d" and will be automatically reverted at the end-file event.
 PLEASE NOTE: if it is reverted it will set hwdec to "auto-safe" - when you'd like different behaviour
-you need to change lines below, which contain: 'mp.set_property("hwdec", "auto-safe")' to:
+you need to change lines in the lua script, which contain: 'mp.set_property("hwdec", "auto-safe")' to:
 'mp.set_property("hwdec", "*your desired value")'.
 
 # auto-deinterlace_let-a-only.lua
@@ -37,3 +37,14 @@ and automatically sets deinterlace on/off.
 This won't let you set 'deinterlace:yes' for progressive video and
 set 'deinterlace:no' for interlaced video as it
 checks if the value you set is correct every time you manually change it with assigned keybind.
+
+# auto-deinterlace_let-m.lua
+This script checks whether current video is interlaced when:
+1. new file is loaded
+2. on seek
+and automatically sets deinterlace on/off.
+
+This will let you set 'deinterlace:yes' for progressive video and
+set 'deinterlace:no' for interlaced video until 'new file is loaded(1) or seek(2) is done
+if one of two: (1) or (2) will occur it will automatically apply 'deinterlace yes/no'
+based on whether the content is interlaced.

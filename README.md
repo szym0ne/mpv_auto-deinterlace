@@ -6,7 +6,7 @@ IMPORTANT: These scripts are not meant to be working together!
 Please choose **only one** you decide to use and put it in your '(...main mpv folder...)\mpv\scripts\' directory.
 Their behavior is only slightly different and is described inside *.lua files as comments at the very beginning.
 
-Tested on WIN10 on shinchiro builds mpv-x86_64-20231112-git-7cab30c and mpv-x86_64-v3-20231112-git-7cab30c releases.
+Tested on WIN10 on shinchiro builds _mpv-x86_64-20231112-git-7cab30c_ and _mpv-x86_64-v3-20231112-git-7cab30c_ releases.
 
 # auto-deinterlace_II.lua
 This script checks whether current video is interlaced when:

@@ -26,6 +26,9 @@ This can be reverted with keybind "ctrl+d" and will be automatically reverted at
 PLEASE NOTE: if it is reverted it will set hwdec to "auto-safe" - when you'd like different behaviour
 you need to change lines in the lua script, which contain: 'mp.set_property("hwdec", "auto-safe")' to:
 'mp.set_property("hwdec", "*your desired value")'.
+That's important because you should set it to your default option you use for hwdec as standard in mpv.conf as this will be loaded on end-file.
+![image](https://github.com/szym0ne/mpv_auto-deinterlace/assets/150375668/c08119aa-004f-4ffa-b24b-eb33f19c3f01)
+
 
 # auto-deinterlace_let-a-only.lua
 This script checks whether current video is interlaced when:

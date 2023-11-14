@@ -18,7 +18,6 @@
 
 
 
-
 function deint()
 	if mp.get_property("video-frame-info/interlaced") == "yes"
 	or mp.get_property("video-frame-info/tff") == "yes"

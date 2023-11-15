@@ -23,10 +23,12 @@ However this will let you switch on video filter bwdif with keybind "ctrl+shift+
 if the video isn't recognized as interlaced - at the same time it will switch off hwdec
 as it seems not to be working correctly with bwdif on.
 This can be reverted with keybind "ctrl+d" and will be automatically reverted at the end-file event.
+
 PLEASE NOTE: if it is reverted it will set hwdec to "auto-safe" - when you'd like different behaviour
 you need to change lines in the lua script, which contain: 'mp.set_property("hwdec", "auto-safe")' to:
 'mp.set_property("hwdec", "*your desired value")'.
 That's important, because you should set it to your default option you use for hwdec as standard in mpv.conf, as this will be loaded on end-file.
+
 ![image](https://github.com/szym0ne/mpv_auto-deinterlace/assets/150375668/bd69246c-71d8-41ea-9699-e19da513bf9d)
 
 # auto-deinterlace_let-a-only.lua

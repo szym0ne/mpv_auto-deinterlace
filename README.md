@@ -1,9 +1,9 @@
 # BWDIF_TOGGLE.lua
-Since deinterlace for properly flagged video content can be set to 'deinterlace=auto' in new versions of mpv player and it works well all other(below) scripts are now obsolete.
+Since automatic deinterlacing for properly flagged video content can now be enabled with 'deinterlace=auto' in mpv.conf in newer versions of the mpv player, all of the scripts listed below are now obsolete.
 
-This one is to use for video content which was transcoded into progressive but really is interlaced.
+This script is intended for video content that was transcoded as progressive, but is actually interlaced.
 
-It toggles BWDIF filter ON or OFF with keybind(and also toggles software decoding ON/OFF as BWDIF is software filter).
+It toggles the BWDIF filter ON or OFF with a keybind (and also toggles software decoding ON/OFF, since BWDIF is a software filter).
 
 # mpv_auto-deinterlace
 Automatic deinterlace scripts for mpv player.

@@ -4,7 +4,7 @@ local bwdif_active = false
 function bwdif_off_without_msg()
     if bwdif_active then
         mp.commandv("vf", "remove", "lavfi=bwdif")
-        mp.set_property("hwdec", original_hwdec or "vaapi")
+        mp.set_property("hwdec", original_hwdec)
         bwdif_active = false
     end
 end
@@ -20,7 +20,7 @@ function deint_vf_bwdif()
         mp.osd_message('BWDIF FILTER ON')
     else
         mp.commandv("vf", "remove", "lavfi=bwdif")
-        mp.set_property("hwdec", original_hwdec or "vaapi")
+        mp.set_property("hwdec", original_hwdec)
         bwdif_active = false
         mp.osd_message('BWDIF FILTER OFF')
     end
